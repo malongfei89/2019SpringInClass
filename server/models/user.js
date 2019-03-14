@@ -6,8 +6,8 @@ const model = {
     });
   },
   get(id, cb){
-    conn.query("SELECT * FROM 2019spring_persons WHERE id = ?", id, (err, data) => {
-      cb(err, data[0]);
+    conn.query("SELECT * FROM forexercise.2019spring_persons WHERE id = ?", id, (err, data) => {
+      cb(err, data);
     })
   },
   add(input, cb){

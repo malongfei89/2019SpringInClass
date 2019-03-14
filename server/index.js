@@ -5,7 +5,7 @@ const port = 3000;
 
 app.get('/', (req, res) => {
     res.send('Hello World!');
-    console.log("connected")
+    console.log("connected");
 });
 app.use('/users', users);
 

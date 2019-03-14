@@ -9,8 +9,9 @@ app.get("/", (req, res) => {
     res.send(data);
   });
 })
-app.post("/", (req, res) =>{
-  user.add({first_name:"Steve",last_name:"Irvin",Birthday: ""}, (err, data) =>{
+app.post("/",  (req, res) =>{
+  user.add({first_name:"Steve",last_name:"Irvin",Birthday:"2011-01-01"}, (err, data) =>{
+    if(err) throw err;
     res.send(data);
   })
 })
